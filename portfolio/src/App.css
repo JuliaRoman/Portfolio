@@ -1,38 +1,48 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #353535;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-painel, .right-painel{
+  width: 50%;
 }
+
+.menu-principal{
+  display: block!important;
+}
+
+.menu-principal > *, .menu-principal ul li > *{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.menu-principal ul{
+  margin: 0;
+}
+
+.menu-principal ul li > *{
+  padding: 0;
+}
+
+/*.menu-principal > *:hover{
+  text-decoration: underline;
+  font-weight: 900;
+}*/

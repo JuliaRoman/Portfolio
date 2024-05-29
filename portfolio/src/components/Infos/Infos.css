@@ -1,0 +1,12 @@
+.infos{
+    display: flex;
+}
+
+img.logo{
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+.grade-horizontal{
+    flex-direction: column;
+}

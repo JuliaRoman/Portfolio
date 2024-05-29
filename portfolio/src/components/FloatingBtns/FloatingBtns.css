@@ -1,0 +1,12 @@
+.floating-btns ul{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.floating-btns li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80px;
+}
