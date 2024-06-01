@@ -1,5 +1,6 @@
 import './App.css';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Button } from '@chakra-ui/react'
+import { FaMoon } from "react-icons/fa";
 import Infos from './components/Infos/Infos';
 import FirstContainer from './components/AllContainers/FirstContainer';
 import SecondContainer from './components/AllContainers/SecondContainer';
@@ -8,12 +9,24 @@ import FourthContainer from './components/AllContainers/FourthContainer';
 import FloatingBtns from './components/FloatingBtns/FloatingBtns';
 
 function App() {
+  // Here's the signature
+  
   return (
     <div className="App">
+      <header>
+        <div className='header-left'>
+          <Infos/>
+        </div>
+        <div className='header-right'>
+          {/*<Button onClick={toggleColorMode}>
+            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+  </Button>*/}
+          <Button backgroundColor={'#fff0'} border={'none'}><FaMoon color='white' size={40}/></Button>
+        </div>
+      </header>
       <body>
         <Tabs className="container">
           <div className="left-painel">
-            <Infos/>
             <TabList className="menu-principal">
               <Tab>Sobre mim</Tab>
               <Tab>Histórico acadêmico</Tab>

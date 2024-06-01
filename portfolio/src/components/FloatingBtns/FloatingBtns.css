@@ -1,7 +1,11 @@
-.floating-btns ul{
-    margin-left: 10px;
+.floating-btns{
     position: absolute;
     bottom: 50px;
+    padding: 0 75px;
+}
+
+.floating-btns ul {
+    padding: 0;
 }
 
 .floating-btns li {

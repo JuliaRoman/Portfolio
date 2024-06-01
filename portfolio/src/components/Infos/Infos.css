@@ -4,9 +4,23 @@
 
 img.logo{
     max-width: 20vh;
-    max-height: 20vh;
+    max-height: 15.38vh;
+    padding: 0 50px 50px 0;
 }
 
 .grade-horizontal{
     flex-direction: column;
+}
+
+.tit-principal{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.tit-secundario{
+    margin: 0;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 500;
 }
